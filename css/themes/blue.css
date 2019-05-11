@@ -13,7 +13,7 @@ Surjith S M / @surjithctly
    COLOR PALLETTES : Blue
    ------------------------------------------------
   
-   Blue 1        : #00aeff;
+   Blue 1        : #035BD4;
    Dark Grey      : #3b3b3b;
    Medium Grey    : #5c5c5c;
    Light Grey     : #818181;
@@ -58,19 +58,19 @@ body,
  * ----- */
 
 ::-moz-selection {
-    background: #00aeff;
+    background: #035BD4;
     color: #FFF;
 }
 
 ::selection {
-    background: #00aeff;
+    background: #035BD4;
     color: #FFF;
 }
 
 .header,
 .sub-header {
     color: #FFF;
-    background-color: #00aeff;
+    background-color: #035BD4;
 }
 /*color*/
 
@@ -80,43 +80,43 @@ a:focus,
 .speaker-info p,
 .highlighted-plan .price,
 .highlighted-plan .plan-name {
-    color: #00aeff;
+    color: #035BD4;
 }
 
 .benefit-item .benefit-icon i {
-    color: #00aeff;
+    color: #035BD4;
 }
 /*background*/
 
 .timeline::before {
-    background: #00aeff;
+    background: #035BD4;
 }
 
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:focus,
 .navbar-default .navbar-nav>.active>a:hover {
     color: #FFF;
-    background-color: #00aeff;
+    background-color: #035BD4;
 }
 /*border*/
 
 .timeline-bullet,
 .highlighted-plan {
-    border-color: #00aeff;
+    border-color: #035BD4;
 }
 /*background color*/
 
 .nav-pills>li.active>a,
 .nav-pills>li.active>a:focus,
 .nav-pills>li.active>a:hover {
-    background-color: #00aeff;
+    background-color: #035BD4;
 }
 /* 
   BUTTONS
   ------- */
 
 .btn-default {
-    color: #00aeff;
+    color: #035BD4;
     border-color: #FFF;
 }
 
@@ -141,8 +141,8 @@ a:focus,
 }
 
 .btn-success {
-    background-color: #00aeff;
-    border-color: #00aeff;
+    background-color: #035BD4;
+    border-color: #035BD4;
 }
 
 .btn-success:hover,
@@ -150,8 +150,8 @@ a:focus,
 .btn-success:active,
 .btn-success.active {
     background-color: #FFF;
-    border-color: #00aeff;
-    color: #00aeff;
+    border-color: #035BD4;
+    color: #035BD4;
 }
 
 .btn-outline {

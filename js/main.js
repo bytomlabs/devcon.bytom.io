@@ -67,10 +67,10 @@ $(function() {
        Initialize Tabs
        ================================================ */
 
-    $('#schedule-tabs a').on("click",function(e) {
-        e.preventDefault()
-        $(this).tab('show')
-    });
+    // $('#schedule-tabs a').on("click",function(e) {
+    //     e.preventDefault()
+    //     $(this).tab('show')
+    // });
 
     /* ================================================
        Stat Counter
@@ -248,26 +248,26 @@ if ($('.popup-gallery').length) {
    jQuery Validate - Reset Defaults
    ================================================ */
 
-$.validator.setDefaults({
-    highlight: function(element) {
-        $(element).closest('.form-group').addClass('has-error');
-    },
-    unhighlight: function(element) {
-        $(element).closest('.form-group').removeClass('has-error');
-    },
-    errorElement: 'small',
-    errorClass: 'help-block',
-    errorPlacement: function(error, element) {
-        if (element.parent('.input-group').length) {
-            error.insertAfter(element.parent());
-        }
-        if (element.parent('label').length) {
-            error.insertAfter(element.parent());
-        } else {
-            error.insertAfter(element);
-        }
-    }
-});
+// $.validator.setDefaults({
+//     highlight: function(element) {
+//         $(element).closest('.form-group').addClass('has-error');
+//     },
+//     unhighlight: function(element) {
+//         $(element).closest('.form-group').removeClass('has-error');
+//     },
+//     errorElement: 'small',
+//     errorClass: 'help-block',
+//     errorPlacement: function(error, element) {
+//         if (element.parent('.input-group').length) {
+//             error.insertAfter(element.parent());
+//         }
+//         if (element.parent('label').length) {
+//             error.insertAfter(element.parent());
+//         } else {
+//             error.insertAfter(element);
+//         }
+//     }
+// });
 
 /* ================================================
    Add to Calendar
@@ -315,32 +315,32 @@ window.twttr = (function(d, s, id) {
    Paypal Form Validation
    ================================================ */
 
-// validate Registration Form
-$("#paypal-regn").validate({
-    rules: {
-        first_name: "required",
-        last_name: "required",
-        email: {
-            required: true,
-            email: true
-        },
-        os0: "required",
-        quantity: "required",
-        agree: "required"
-    },
-    messages: {
-        first_name: "Your first name",
-        last_name: "Your last name",
-        email: "We need your email address",
-        os0: "Choose your Pass",
-        quantity: "How many seats",
-        agree: "Please accept our terms and privacy policy"
-    },
-    submitHandler: function(form) {
-        $("#reserve-btn").attr("disabled", true);
-        form.submit();
-    }
-});
+// // validate Registration Form
+// $("#paypal-regn").validate({
+//     rules: {
+//         first_name: "required",
+//         last_name: "required",
+//         email: {
+//             required: true,
+//             email: true
+//         },
+//         os0: "required",
+//         quantity: "required",
+//         agree: "required"
+//     },
+//     messages: {
+//         first_name: "Your first name",
+//         last_name: "Your last name",
+//         email: "We need your email address",
+//         os0: "Choose your Pass",
+//         quantity: "How many seats",
+//         agree: "Please accept our terms and privacy policy"
+//     },
+//     submitHandler: function(form) {
+//         $("#reserve-btn").attr("disabled", true);
+//         form.submit();
+//     }
+// });
 
 /*
  * // End $ Strict Function
