@@ -789,10 +789,6 @@ p,
     background: none;
 }
 
-.no-video .video-container video,
-.touch .video-container video {
-    display: none;
-}
 
 .no-video .video-container .poster,
 .touch .video-container .poster {

@@ -99,6 +99,24 @@
     width: 100%;
     padding: 30px 16px;
   }
+  .filter{
+    background: #035BD4 !important;
+  }
+  video{
+    display: none;
+  }
+  .homeTitle{
+    margin-top: 150px;
+  }
+  .reward-web{
+    display: none;
+  }
+  .reward-mobile{
+    display: block !important;
+  }
+}
+.reward-mobile{
+  display: none;
 }
 
 
