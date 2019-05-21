@@ -61,7 +61,7 @@
                 <div class="container">
                     <h1 class="homeTitle headline wow fadeInDown" data-wow-delay="0.1s">Bytom DevCon2</h1>
                     <div class="when_where wow fadeIn" data-wow-delay="0.4s">
-                        <p class="event_when">September 7th - 8th 2019</p>
+                        <p class="event_when">August 24th - 25th 2019</p>
                         <p class="event_where">San Francisco, U.S</p>
                     </div>
                     <div class="header_bottom-bg">
@@ -71,7 +71,7 @@
             </div>
 
             <div class="filter"></div>
-            <video autoplay="true" preload="true" poster="video/event-video.jpg" loop class="fillWidth video-header">
+            <video id="video" autoplay="true" preload="true" poster="video/event-video.jpg" loop class="fillWidth video-header">
                 <source src="//bycoin.oss-cn-shanghai.aliyuncs.com/bytom/bytom.io/bytom.mp4" type="video/mp4" />
                 <source src="//bycoin.oss-cn-shanghai.aliyuncs.com/bytom/bytom.io/bytom.webm" type="video/webm" />
             </video>
@@ -100,7 +100,7 @@
                 <!-- Countdown JS for the Event Date Starts here.
     TIP: You can change your event time below in the Same Format.  -->
 
-                <ul id="countdown" data-event-date="9 september 2019 00:00:00">
+                <ul id="countdown" data-event-date="25 august 2019 00:00:00">
                     <li class="wow zoomIn" data-wow-delay="0s"> <span class="days">00</span>
                         <p class="timeRefDays">days</p>
                     </li>
@@ -227,7 +227,7 @@
 
                             <div class="timeline-content">
                                 <h2 class="wow flipInX" data-wow-delay="0.3s"> Project optimization</h2>
-                                <span class="date wow flipInX" data-wow-delay="0.3s">August 8th-Sep 1st</span>
+                                <span class="date wow flipInX" data-wow-delay="0.3s">Aug 8th-Aug 20th</span>
                             </div>
                             <!-- timeline-content -->
                         </div>
@@ -241,7 +241,7 @@
 
                             <div class="timeline-content">
                                 <h2 class="wow flipInX" data-wow-delay="0.3s"> Roadshow</h2>
-                                <span class="date wow flipInX" data-wow-delay="0.3s">Sep 7th</span>
+                                <span class="date wow flipInX" data-wow-delay="0.3s">Aug 24th</span>
                             </div>
                             <!-- timeline-content -->
                         </div>
@@ -255,7 +255,7 @@
 
                             <div class="timeline-content">
                                 <h2 class="wow flipInX" data-wow-delay="0.3s"> DevCon2</h2>
-                                <span class="date wow flipInX" data-wow-delay="0.3s">Sep 8th</span>
+                                <span class="date wow flipInX" data-wow-delay="0.3s">Aug 25th</span>
                             </div>
                             <!-- timeline-content -->
                         </div>
@@ -281,7 +281,7 @@
         <div class="row reward-web">
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail wow fadeInUp">
-                    <div class="caption">
+                    <div style="float: right" class="caption">
                         <h6 class="caption-title">Third Prize</h6>
                         <p class="caption-text">3 Projects</p>
                         <p class="btm">BTM equivalent of $5,000</p>
@@ -298,7 +298,7 @@
                 </div>
             </div>
             <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0">
-                <div class="thumbnail wow fadeInUp" data-wow-delay="0.6s">
+                <div style="float: left" class="thumbnail wow fadeInUp" data-wow-delay="0.6s">
                     <div class="caption">
                         <h6 class="caption-title">Second Prize</h6>
                         <p class="caption-text">2 Projects </p>
@@ -571,6 +571,28 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-139977346-1');
+
+        $(function(){
+            var videoPlayer = setInterval(() => {
+                var video = document.getElementById('video');
+                if(video && video.readyState === 4) {
+                    try {
+                        var playPromise = video.play();
+                        if (playPromise !== undefined) {
+                            playPromise.then(_ => {
+                            
+                            })
+                            .catch(error => {
+                                console.log(error);
+                            });
+                        }
+                        clearInterval(videoPlayer);
+                    } catch (error) {
+                        console.log(error); 
+                    }
+                }
+            }, 100);
+        });
     </script>
 
 </body>
