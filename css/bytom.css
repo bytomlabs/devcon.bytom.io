@@ -114,12 +114,22 @@
   .reward-mobile{
     display: block !important;
   }
+  .contact span{
+    display: block;
+  }
 }
 .reward-mobile{
   display: none;
 }
 
-
+.contact span i{
+  font-style: normal;
+  color: #000;
+  font-weight: 500;
+}
+.contact span{
+  margin: 0 10px;
+}
 
 
 
