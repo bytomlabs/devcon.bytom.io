@@ -196,8 +196,11 @@
   .media-mobile img{
     width: 100%;
   }
+  .prices img{
+    display: none;
+  }
 }
-.price img{
+.prices img{
   width: 500px;
 }
 .img-bytom{
