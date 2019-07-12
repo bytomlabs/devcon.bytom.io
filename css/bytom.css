@@ -130,11 +130,86 @@
 .contact span{
   margin: 0 10px;
 }
+.slick-track{
+  display: flex;
+  justify-content: space-between;
+  width: 100% !important;
+}
+.speaker-info span{
+  color: #B3B3B3;
+}
+.speaker-info p{
+  color: #000;
+  font-size: 16px;
+}
+.slick-initialized .slick-slide{
+  width: 180px !important;
+}
 
 
+.tab-pane img{
+  width: 100%;
+  margin-top: 35px;
+}
 
-
-
-
+.bytom-speakers{
+  display: flex;
+  justify-content: space-between;
+}
+.bytom-speakers .speaker-info{
+  width: 180px;
+}
+.partner{
+  width: 100%;
+  height: 105px;
+  background: url(/images/devcon/Media/Partner.png) center / 732px no-repeat;
+}
+.media-mobile{
+  display: none;
+}
+.bytom-info{
+  width: 100%;
+  text-align: center;
+}
+@media (max-width: 640px) {
+  .partner{
+    background: url(/images/devcon/Media/Partner.png) center / 100% no-repeat;
+  }
+  .bytom-speakers{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .bytom-speakers .speaker-info{
+    width: 180px;
+  }
+  .media-web{
+    display: none;
+  }
+  .media-mobile{
+    display: block;
+  }
+  .media-mobile p{
+    text-align: center;
+    margin: 35px 0 10px 0;
+  }
+  .media-mobile img{
+    width: 100%;
+  }
+}
+.price img{
+  width: 500px;
+}
+.img-bytom{
+  width: 0;
+  height: 0;
+  display: none;
+}
+.tab-pane.img img{
+  width: 90%;
+}
+.tab-pane.img{
+  text-align: center;
+}
 
 
