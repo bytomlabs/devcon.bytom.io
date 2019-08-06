@@ -157,7 +157,7 @@
   justify-content: space-between;
 }
 .bytom-speakers .speaker-info{
-  width: 180px;
+  width: 168px;
 }
 .partner{
   width: 100%;
@@ -180,9 +180,8 @@
     align-items: center;
     flex-direction: column;
   }
-  .bytom-speakers .speaker-info{
-    width: 180px;
-  }
+  
+  
   .media-web{
     display: none;
   }
