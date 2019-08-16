@@ -162,7 +162,7 @@
 .partner{
   width: 100%;
   height: 105px;
-  background: url(/images/devcon/Media/Partner.png) center / 732px no-repeat;
+  background: url(/images/devcon/Media/Partner-v2.png) center / 732px no-repeat;
 }
 .media-mobile{
   display: none;
@@ -173,7 +173,7 @@
 }
 @media (max-width: 640px) {
   .partner{
-    background: url(/images/devcon/Media/Partner.png) center / 100% no-repeat;
+    background: url(/images/devcon/Media/Wap-Partner-v2.png) center / 100% no-repeat;
   }
   .bytom-speakers{
     display: flex;
